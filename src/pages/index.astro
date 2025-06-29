@@ -1,16 +1,12 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+  <h1 class="text-3xl font-bold mb-4">Welcome to Astro Quote App</h1>
+  <p class="mb-6">Click <a href="/quote" class="underline">Quote</a> to get inspired.</p>
+
+  <div class="bg-blue-100 text-blue-900 p-4 rounded">
+    ✨ Try our new feature: <a href="/saver" class="underline font-semibold">Quote Saver</a>!
+  </div>
+</BaseLayout>

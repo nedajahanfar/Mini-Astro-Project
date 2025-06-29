@@ -1,0 +1,17 @@
+---
+import QuoteSaver from '../components/QuoteSaver.jsx';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Quote Saver">
+  <h1 class="text-3xl font-bold mb-6"> Drag & Save Quotes</h1>
+  <QuoteSaver client:load />
+</BaseLayout>
+
+  <!-- 
+  client:load =>	Load immediately (e.g. toggle, timer)
+  client:visible =>	Load only when visible in viewport
+  client:idle =>	Load after browser is idle
+  client:media =>	Load based on screen size (e.g. for mobile) 
+  -->
+

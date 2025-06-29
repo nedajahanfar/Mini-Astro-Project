@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="font-sans text-black bg-white p-6">
+    <header class="flex justify-between items-center mb-6">
+      <nav class="space-x-4">
+        <a href="/" class="underline">Home</a>
+        <a href="/quote" class="underline">Quote</a>
+        <a href="/about" class="underline">About</a>
+         <a href="/saver" class="underline">Saver</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
